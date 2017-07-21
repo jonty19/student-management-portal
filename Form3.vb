@@ -13,7 +13,7 @@ Public Class Form3
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim user As String = student_page.userid
         con = New MySqlConnection
-        con.ConnectionString = "server= 127.0.0.1;userid= root ;password= Gandu@1997;database= database3"
+        con.ConnectionString = "server= 127.0.0.1;userid= root ;password= password;database= database3"
         Try
             con.Open()
             Dim Query As String = Nothing
@@ -51,8 +51,8 @@ Public Class Form3
         Try
             Dim mail As New MailMessage
             Dim smtpserver As New SmtpClient
-            Dim admin_mail As String = "jontywillis49@gmail.com"
-            smtpserver.Credentials = New Net.NetworkCredential("jontywillis49@gmail.com", "Gandu@1997")
+            Dim admin_mail As String = "client_id@gmail.com"
+            smtpserver.Credentials = New Net.NetworkCredential("client_id@gmail.com", "password")
             smtpserver.Port = "587"
             smtpserver.Host = "smtp.gmail.com"
             smtpserver.EnableSsl = True

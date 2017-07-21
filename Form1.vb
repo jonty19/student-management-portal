@@ -6,7 +6,7 @@ Public Class student_page
     Public Shared userid = Nothing
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         con = New MySqlConnection
-        con.ConnectionString = "server= 127.0.0.1;userid= root;password= Gandu@1997;database=library"
+        con.ConnectionString = "server= 127.0.0.1;userid= root;password= password;database=library"
         userid = TextBox1.Text
         Dim pass As String = TextBox2.Text
         Dim reader As MySqlDataReader

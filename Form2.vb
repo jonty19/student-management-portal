@@ -10,7 +10,7 @@ Public Class Form2
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         con = New MySqlConnection
-        con.ConnectionString = "server= 127.0.0.1;userid= root;password= Gandu@1997;database=library"
+        con.ConnectionString = "server= 127.0.0.1;userid= root;password= password;database=library"
         Dim reader As MySqlDataReader
         Try
             con.Open()
